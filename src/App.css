@@ -26,6 +26,14 @@
   color: #ff0000;
 }
 
+.charge {
+  color: #ff0000;
+}
+
+.credit {
+  color: green;
+}
+
 .small {
   font-size: 0.75rem;
 }
