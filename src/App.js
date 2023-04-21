@@ -8,17 +8,29 @@ function App() {
   let [totalBillSolar, setTotalBillSolar] = React.useState(0)
 
   const handleSolar = (event) => {
+    //check if its a real #
     let solarCredit = parseFloat(event.target.value);
+    if(!isNaN(solarCredit)){
+      setSolar(solarCredit * .08);
+      setTotalBillSolar(150 + 15 - (solarCredit * .08))
+    } else {
+      setSolar(0);
+      setTotalBillSolar(0)
+    }
+    
 
-    setSolar(solarCredit * .08);
-    setTotalBillSolar(150 + 15 - (solarCredit * .08))
+    // setSolar(solarCredit * .08);
+    // setTotalBillSolar(150 + 15 - (solarCredit * .08))
   }
 
   let [billGrid, setBill] = React.useState(0);
   let handleGrid = (event) => {
     let kwhUsed = parseFloat(event.target.value);
-
-    setBill(kwhUsed * .37)
+    if(!isNaN(kwhUsed)){
+      setBill(kwhUsed * .37)
+    } else {
+      kwhUsed = 0;
+    }
   };
 
   return (
