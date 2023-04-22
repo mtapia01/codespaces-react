@@ -81,6 +81,7 @@ function App() {
 
           <div>
             Switching to solar you will save ${(billGrid - totalBillSolar).toFixed(2)}
+            {/* Switching to solar you will save ${(totalBillSolar - billGrid).toFixed(2)} */}
           </div>
 
         </header>
