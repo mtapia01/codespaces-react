@@ -37,3 +37,33 @@
 .small {
   font-size: 0.75rem;
 }
+
+.parent {
+  border: 1px solid #232527;
+  background-color: #232527;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center margin-right;
+  
+}
+.child {
+  display: inline-block;
+  border: 1px solid #232527;
+  padding: 4rem 4rem;
+  vertical-align: middle;
+  /* margin-right: 50%;  */
+}
+mark {
+  background-color: #644611;
+  color: rgb(255, 255, 255);
+}
+
+marker{
+  background-color: #0f671c;
+  color: rgb(255, 255, 255);
+}
+.hidden{
+  display: none;
+}
+
+
